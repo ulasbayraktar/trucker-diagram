@@ -1,0 +1,388 @@
+<html>
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+
+<head>
+  <title>Trucking Diagram - Los Santos Roleplay</title>
+  <style type="text/css">
+    .tooltip {
+      font-family: Tahoma;
+      font-size: 12px;
+      background-color: #fafafa;
+      border: 1px solid black;
+      padding: 5px 0 0 5px;
+    }
+  </style>
+  <style type="text/css">
+    .tooltip {
+      position: absolute;
+      display: none;
+    }
+
+    body {
+      background-color: #24282e;
+
+    }
+
+    .logo {
+      position: fixed;
+      left: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-bottom: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <img src="lsrplogo.png" alt="LS-RP Logo" class="logo">
+  </div>
+
+
+  </div>
+
+
+  <script type="text/javascript">
+    tooltip = null;
+    document.onmousemove = updateTooltip;
+    function updateTooltip(e) {
+      try {
+        if (document.all) {
+          if (
+            document.documentElement &&
+            document.documentElement.scrollTop
+          ) {
+            // Explorer 6 Strict
+            x = document.documentElement.scrollLeft + window.event.x;
+            y = document.documentElement.scrollTop + window.event.y;
+          } else {
+            // all other Explorers
+            x = document.body.scrollLeft + window.event.x;
+            y = document.body.scrollTop + window.event.y;
+          }
+        } else {
+          x = e.pageX;
+          y = e.pageY;
+        }
+        if (tooltip != null) {
+          o = 20;
+          var sx, sy;
+          if (self.pageYOffset) {
+            // all except Explorer
+            sx = self.pageXOffset;
+            sy = self.pageYOffset;
+          } else if (
+            document.documentElement &&
+            document.documentElement.scrollTop
+          ) {
+            // Explorer 6 Strict
+            sx = document.documentElement.scrollLeft;
+            sy = document.documentElement.scrollTop;
+          } else if (document.body) {
+            // all other Explorers
+            sx = document.body.scrollLeft;
+            sy = document.body.scrollTop;
+          }
+          t = y + o + tooltip.offsetHeight;
+          w = sy + document.body.clientHeight;
+          if (t > w) {
+            y = y - o - tooltip.offsetHeight;
+          } else {
+            y = y + o;
+          }
+          t = x + o + tooltip.offsetWidth;
+          w = sx + document.body.clientWidth;
+          if (t > w) {
+            x = x - o - tooltip.offsetWidth;
+          } else {
+            x = x + o;
+          }
+          if (
+            (tooltip.style.top == "" || tooltip.style.top == 0) &&
+            (tooltip.style.left == "" || tooltip.style.left == 0)
+          ) {
+            tooltip.style.width = tooltip.offsetWidth + "px";
+            tooltip.style.height = tooltip.offsetHeight + "px";
+          }
+          tooltip.style.left = x + "px";
+          tooltip.style.top = y + "px";
+        }
+      } catch (error) {
+        error = null;
+      }
+    }
+    function showTooltip(id) {
+      try {
+        tooltip = document.getElementById(id);
+        tooltip.style.display = "block";
+      } catch (error) {
+        error = null;
+      }
+    }
+    function hideTooltip() {
+      try {
+        tooltip.style.display = "none";
+      } catch (error) {
+        error = null;
+      }
+    }
+  </script>
+
+  <div class="tooltip" id="n0"><strong>Green Palms Refinery</strong></div>
+  <div class="tooltip" id="n1">
+    <strong>Gas Stations</strong><br />10 products / 1 cubic metre<br />Max:
+    2400 products
+  </div>
+  <div class="tooltip" id="n2"><strong>Easter Bay Chemicals</strong></div>
+  <div class="tooltip" id="n3">
+    <strong>San Andreas Federal Weapon Factory</strong>
+  </div>
+  <div class="tooltip" id="n4"><strong>San Andreas Steel Mill</strong></div>
+  <div class="tooltip" id="n5">
+    <strong>Ammunations</strong><br />10 products / 1 strongbox<br />Max: 1000
+    products
+  </div>
+  <div class="tooltip" id="n6"><strong>Shafted Appliances</strong></div>
+  <div class="tooltip" id="n7">
+    <strong>24/7</strong><br />5 products / 1 crate<br />Max: 500 products
+  </div>
+  <div class="tooltip" id="n8">
+    <strong>Bone County Substation, Sherman Dam Powerplant</strong>
+  </div>
+  <div class="tooltip" id="n9"><strong>Fort Carson Quarry</strong></div>
+  <div class="tooltip" id="n10">
+    <strong>Ocean Docks Concrete Plant</strong>
+  </div>
+  <div class="tooltip" id="n11">
+    <strong>Rockshore + Doherty Construction Sites</strong>
+  </div>
+  <div class="tooltip" id="n12"><strong>Solarin Autos</strong></div>
+  <div class="tooltip" id="n13">
+    <strong>Vehicle Dealerships</strong><br />3 products / 1 loaded vehicle on
+    Packer<br />Max: 200 products
+  </div>
+  <div class="tooltip" id="n14">mechanics</div>
+  <div class="tooltip" id="n15"><strong>Whetstone Scrap Yard</strong></div>
+  <div class="tooltip" id="n16"><strong>Doherty Textile Factory</strong></div>
+  <div class="tooltip" id="n17">
+    <strong>Clothing Shops</strong><br />5 products / 1 crate<br />Max: 500
+    products
+  </div>
+  <div class="tooltip" id="n18">
+    <strong>Farms*</strong><br /><em>*Not all farms produce all commodities!</em>
+  </div>
+  <div class="tooltip" id="n19"><strong>Las Payasdas Malt House</strong></div>
+  <div class="tooltip" id="n20"><strong>FleischBerg Brewery</strong></div>
+  <div class="tooltip" id="n21">
+    <strong>Bars</strong><br />5 products / 1 crate<br />Max: 500 products
+  </div>
+  <div class="tooltip" id="n22">
+    <strong>The Leafy Hollow Orchards</strong>
+  </div>
+  <div class="tooltip" id="n23"><strong>Fort Carson Distillery</strong></div>
+  <div class="tooltip" id="n24">
+    <strong>San Andreas Food Processing Plant</strong>
+  </div>
+  <div class="tooltip" id="n25">
+    <strong>Restaurants</strong><br />5 products / 1 crate<br />Max: 500
+    products
+  </div>
+  <div class="tooltip" id="n26"><strong>The Panopticon Forests</strong></div>
+  <div class="tooltip" id="n27"><strong>Angel Pine Sawmill</strong></div>
+  <div class="tooltip" id="n28">
+    <strong>Furniture Shop**</strong><br />10 products / 1 crate<br />Max:
+    10000 products<br /><em>**This is a state owned business.</em>
+  </div>
+  <div class="tooltip" id="n29">
+    <strong>Advertisement Center**</strong><br />20 products / 1 crate<br />Max:
+    5000 products<br /><em>**This is a state owned business.</em>
+  </div>
+  <div class="tooltip" id="n30">
+    <strong>San Andreas Federal Mint</strong>
+  </div>
+  <div class="tooltip" id="n31">
+    <strong>Bank**</strong><br />100 products / 1 strongbox<br />Max: 10000
+    products<br /><em>**This is a state owned business.</em>
+  </div>
+  <div class="tooltip" id="n32">detectives</div>
+  <div class="tooltip" id="n33">
+    <strong>Car Modding Shops</strong><br />3 products / 1 cubic metre<br />Max:
+    1000 products
+  </div>
+  <div class="tooltip" id="n34">
+    <strong>Pay &amp; Sprays</strong><br />10 products / 1 crate<br />Max: 600
+    products
+  </div>
+  <div class="tooltip" id="e0">fuel <em>(cubic metres)</em></div>
+  <div class="tooltip" id="e1">gunpowder <em>(crates)</em></div>
+  <div class="tooltip" id="e2">steel shapes <em>(crates)</em></div>
+  <div class="tooltip" id="e3">scrap metal <em>(loose)</em></div>
+  <div class="tooltip" id="e4">weapons <em>(strongboxes)</em></div>
+  <div class="tooltip" id="e5">steel shapes <em>(crates)</em></div>
+  <div class="tooltip" id="e6">appliances <em>(crates)</em></div>
+  <div class="tooltip" id="e7">transformers <em>(transformers)</em></div>
+  <div class="tooltip" id="e8">aggregate <em>(loose)</em></div>
+  <div class="tooltip" id="e9">bricks <em>(pallets)</em></div>
+  <div class="tooltip" id="e10">vehicles <em>(vehicles)</em></div>
+  <div class="tooltip" id="e11">car parts <em>(crates)</em></div>
+  <div class="tooltip" id="e12">steel shapes <em>(crates)</em></div>
+  <div class="tooltip" id="e13">dyes <em>(liquid)</em></div>
+  <div class="tooltip" id="e14">dyes <em>(liquid)</em></div>
+  <div class="tooltip" id="e15">clothes <em>(crates)</em></div>
+  <div class="tooltip" id="e16">
+    cotton <em>(loose)</em><br /><em>*Not all farms produce cotton!</em>
+  </div>
+  <div class="tooltip" id="e17">
+    cereal <em>(loose)</em><br /><em>*Not all farms produce cereal!</em>
+  </div>
+  <div class="tooltip" id="e18">malt <em>(loose)</em></div>
+  <div class="tooltip" id="e19">beverages <em>(crate)</em></div>
+  <div class="tooltip" id="e20">beverages <em>(crate)</em></div>
+  <div class="tooltip" id="e21">fruit <em>(crate)</em></div>
+  <div class="tooltip" id="e22">fruit <em>(crate)</em></div>
+  <div class="tooltip" id="e23">meal <em>(crate)</em></div>
+  <div class="tooltip" id="e24">
+    cereal <em>(loose)</em>, eggs <em>(crates)</em>, meat <em>(crates)</em>,
+    milk <em>(liquid)</em><br /><em>*Not all farms produce all of those!</em>
+  </div>
+  <div class="tooltip" id="e25">
+    cereal <em>(loose)</em><br /><em>*Not all farms produce cereal!</em>
+  </div>
+  <div class="tooltip" id="e26">wood logs <em>(sort of logs)</em></div>
+  <div class="tooltip" id="e27">furniture <em>(crates)</em></div>
+  <div class="tooltip" id="e28">paper <em>(crates)</em></div>
+  <div class="tooltip" id="e29">coins <em>(strongboxes)</em></div>
+  <div class="tooltip" id="e31">car parts <em>(crates)</em></div>
+  <div class="tooltip" id="e32">dyes <em>(liquid)</em></div>
+
+  <map name="image1_1">
+    <area shape="poly"
+      coords="35,216,15,216,15,221,20,221,20,131,15,131,15,136,686,136,686,126,15,126,10,131,10,221,15,226,35,226,35,216,35,216"
+      alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e32')" />
+    <area shape="poly" coords="460,665,460,721,465,726,688,726,688,716,465,716,465,721,470,721,470,665,460,665,460,665"
+      alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e31')" />
+    <area shape="poly" coords="235,1616,687,1616,687,1606,235,1606,235,1616,235,1616" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e29')" />
+    <area shape="poly"
+      coords="460,1455,460,1501,465,1506,686,1506,686,1496,465,1496,465,1501,470,1501,470,1455,460,1455,460,1455" alt=""
+      onmouseout="hideTooltip()" onmouseover="showTooltip('e28')" />
+    <area shape="poly" coords="565,1436,686,1436,686,1426,565,1426,565,1436,565,1436" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e27')" />
+    <area shape="poly" coords="235,1436,356,1436,356,1426,235,1426,235,1436,235,1436" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e26')" />
+    <area shape="poly"
+      coords="130,1035,130,1322,135,1327,356,1327,356,1317,135,1317,135,1322,140,1322,140,1035,130,1035,130,1035" alt=""
+      onmouseout="hideTooltip()" onmouseover="showTooltip('e25')" />
+    <area shape="poly"
+      coords="35,1006,15,1006,10,1011,10,1322,15,1327,356,1327,356,1317,15,1317,15,1322,20,1322,20,1011,15,1011,15,1016,35,1016,35,1006,35,1006"
+      alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e24')" />
+    <area shape="poly" coords="565,1327,686,1327,686,1317,565,1317,565,1327,565,1327" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e23')" />
+    <area shape="poly"
+      coords="354,1196,375,1196,375,1191,370,1191,370,1256,375,1261,465,1261,465,1256,460,1256,460,1289,470,1289,470,1256,465,1251,375,1251,375,1256,380,1256,380,1191,375,1186,354,1186,354,1196,354,1196"
+      alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e22')" />
+    <area shape="poly" coords="355,1196,476,1196,476,1186,355,1186,355,1196,355,1196" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e21')" />
+    <area shape="poly"
+      coords="685,1196,795,1196,800,1191,800,1123,790,1123,790,1191,795,1191,795,1186,685,1186,685,1196,685,1196" alt=""
+      onmouseout="hideTooltip()" onmouseover="showTooltip('e20')" />
+    <area shape="poly"
+      coords="685,992,795,992,795,987,790,987,790,1058,800,1058,800,987,795,982,685,982,685,992,685,992" alt=""
+      onmouseout="hideTooltip()" onmouseover="showTooltip('e19')" />
+    <area shape="poly"
+      coords="564,1104,585,1104,590,1099,590,1020,580,1020,580,1099,585,1099,585,1094,564,1094,564,1104,564,1104" alt=""
+      onmouseout="hideTooltip()" onmouseover="showTooltip('e18')" />
+    <area shape="poly"
+      coords="130,1035,130,1099,135,1104,356,1104,356,1094,135,1094,135,1099,140,1099,140,1035,130,1035,130,1035" alt=""
+      onmouseout="hideTooltip()" onmouseover="showTooltip('e17')" />
+    <area shape="poly"
+      coords="235,1016,465,1016,470,1011,470,909,460,909,460,1011,465,1011,465,1006,235,1006,235,1016,235,1016" alt=""
+      onmouseout="hideTooltip()" onmouseover="showTooltip('e16')" />
+    <area shape="poly" coords="565,881,686,881,686,871,565,871,565,881,565,881" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e15')" />
+    <area shape="poly"
+      coords="35,216,15,216,10,221,10,876,15,881,356,881,356,871,15,871,15,876,20,876,20,221,15,221,15,226,35,226,35,216,35,216"
+      alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e14')" />
+    <area shape="poly"
+      coords="35,216,15,216,10,221,10,641,15,646,356,646,356,636,15,636,15,641,20,641,20,221,15,221,15,226,35,226,35,216,35,216"
+      alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e13')" />
+    <area shape="poly"
+      coords="460,366,460,386,465,386,465,381,267,381,262,386,262,591,267,596,465,596,465,591,460,591,460,608,470,608,470,591,465,586,267,586,267,591,272,591,272,386,267,386,267,391,465,391,470,386,470,366,460,366,460,366"
+      alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e12')" />
+    <area shape="poly" coords="460,665,460,780,465,785,688,785,688,775,465,775,465,780,470,780,470,665,460,665,460,665"
+      alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e11')" />
+    <area shape="poly" coords="565,646,686,646,686,636,565,636,565,646,565,646" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e10')" />
+    <area shape="poly" coords="565,1726,686,1726,686,1716,565,1716,565,1726,565,1726" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e9')" />
+    <area shape="poly" coords="235,1726,356,1726,356,1716,235,1716,235,1726,235,1726" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e8')" />
+    <area shape="poly" coords="460,486,460,551,465,556,686,556,686,546,465,546,465,551,470,551,470,486,460,486,460,486"
+      alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e7')" />
+    <area shape="poly" coords="565,466,686,466,686,456,565,456,565,466,565,466" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e6')" />
+    <area shape="poly" coords="460,365,460,427,470,427,470,365,460,365,460,365" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e5')" />
+    <area shape="poly" coords="565,226,686,226,686,216,565,216,565,226,565,226" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e4')" />
+    <area shape="poly" coords="235,346,357,346,357,336,235,336,235,346,235,346" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e3')" />
+    <area shape="poly" coords="470,316,470,254,460,254,460,316,470,316,470,316" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e2')" />
+    <area shape="poly" coords="235,226,356,226,356,216,235,216,235,226,235,226" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e1')" />
+    <area shape="poly" coords="235,46,687,46,687,36,235,36,235,46,235,46" alt="" onmouseout="hideTooltip()"
+      onmouseover="showTooltip('e0')" />
+    <area shape="rect" coords="695,106,895,156" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n34')" />
+    <area shape="rect" coords="696,696,896,746" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n33')" />
+    <area shape="rect" coords="695,386,771,416" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n32')" />
+    <area shape="rect" coords="695,1586,895,1636" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n31')" />
+    <area shape="rect" coords="35,1586,235,1636" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n30')" />
+    <area shape="rect" coords="695,1476,895,1526" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n29')" />
+    <area shape="rect" coords="695,1406,895,1456" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n28')" />
+    <area shape="rect" coords="365,1406,565,1456" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n27')" />
+    <area shape="rect" coords="35,1406,235,1456" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n26')" />
+    <area shape="rect" coords="695,1297,895,1347" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n25')" />
+    <area shape="rect" coords="365,1297,565,1347" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n24')" />
+    <area shape="rect" coords="485,1166,685,1216" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n23')" />
+    <area shape="rect" coords="155,1166,355,1216" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n22')" />
+    <area shape="rect" coords="695,1066,895,1116" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n21')" />
+    <area shape="rect" coords="485,962,685,1012" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n20')" />
+    <area shape="rect" coords="365,1074,565,1124" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n19')" />
+    <area shape="rect" coords="35,986,235,1036" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n18')" />
+    <area shape="rect" coords="695,851,895,901" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n17')" />
+    <area shape="rect" coords="365,851,565,901" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n16')" />
+    <area shape="rect" coords="35,316,235,366" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n15')" />
+    <area shape="rect" coords="696,765,773,795" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n14')" />
+    <area shape="rect" coords="694,616,894,666" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n13')" />
+    <area shape="rect" coords="364,616,564,666" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n12')" />
+    <area shape="rect" coords="695,1696,895,1746" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n11')" />
+    <area shape="rect" coords="365,1696,565,1746" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n10')" />
+    <area shape="rect" coords="35,1696,235,1746" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n9')" />
+    <area shape="rect" coords="695,526,895,576" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n8')" />
+    <area shape="rect" coords="695,436,895,486" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n7')" />
+    <area shape="rect" coords="365,436,565,486" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n6')" />
+    <area shape="rect" coords="695,196,895,246" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n5')" />
+    <area shape="rect" coords="365,316,565,366" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n4')" />
+    <area shape="rect" coords="365,196,565,246" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n3')" />
+    <area shape="rect" coords="35,196,235,246" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n2')" />
+    <area shape="rect" coords="695,16,895,66" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n1')" />
+    <area shape="rect" coords="35,16,235,66" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n0')" />
+  </map>
+
+  <table class="yimagetable" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto;">
+    <tbody>
+      <tr>
+        <td style="text-align: center;">
+          <img class="yimage" src="diagram.png" usemap="#image1_1" border="0" alt="" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>
