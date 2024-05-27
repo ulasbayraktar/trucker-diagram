@@ -1,10 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <link rel="icon" type="image/png" href="favicon.png">
 
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trucking Diagram - Los Santos Roleplay</title>
+
   <style type="text/css">
     .tooltip {
       font-family: Tahoma;
@@ -13,8 +17,7 @@
       border: 1px solid black;
       padding: 5px 0 0 5px;
     }
-  </style>
-  <style type="text/css">
+
     .tooltip {
       position: absolute;
       display: none;
@@ -22,27 +25,124 @@
 
     body {
       background-color: #24282e;
+      margin: 0;
+      /* Varsayılan marginleri kaldırmak için */
 
+    }
+
+    .logo-container {
+      position: fixed;
+      left: 50px; /* Soldan biraz mesafe bırak */
+      top: 50px; /* Üstten biraz mesafe bırak */
+      text-align: center; /* Logoyu ortalamak için */
     }
 
     .logo {
-      position: fixed;
-      left: 50px;
-      top: 50%;
-      transform: translateY(-50%);
-      margin-bottom: 20px;
+      max-width: 100%;
+      height: auto;
     }
-  </style>
 
+    .social-media-icons {
+      margin-top: 10px;
+      /* Logodan sonra boşluk eklemek için */
+    }
+
+    .social-media-icons a {
+      margin: 0 5px;
+      /* İkonlar arasına boşluk eklemek için */
+    }
+
+        .social-media-icons a img {
+      width: 30px; /* İkonların boyutunu ayarlamak için */
+      height: auto;
+      margin: 5px 0; /* İkonlar arasına boşluk eklemek için */
+      cursor: pointer; /* Tıklanabilir olduğunu belirtmek için */
+    }
+
+    .social-media-icons-container {
+  position: fixed;
+  right: 20px; /* Sağdan biraz mesafe bırak */
+  bottom: 20px; /* Alttan biraz mesafe bırak */
+  display: flex;
+  flex-direction: column; /* İkonları dikey hizalamak için */
+  align-items: center;
+}
+  </style>
 </head>
 
 <body>
 
-  <img src="lsrplogo.png" alt="LS-RP Logo" class="logo">
+  <div class="logo-container">
+    <img src="lsrplogo.png" alt="LS-RP Logo" class="logo">
   </div>
 
+  <div class="social-media-icons-container">
+    <div class="social-media-icons">
+    <app-socials _ngcontent-ufx-c109="" _nghost-ufx-c108=""
+      style="margin:0px;padding:0px;box-sizing:border-box;display:block;scrollbar-width:none;scrollbar-color:auto;">
+      <div _ngcontent-ufx-c108=""
+        style="margin:0px;padding:0px;box-sizing:border-box;display:flex;justify-content:center;scrollbar-width:none;scrollbar-color:auto;">
+        <a _ngcontent-ufx-c108="" target="_blank" href="https://community.ls-rp.com"
+          style="margin:0px;padding:0px;box-sizing:border-box;scrollbar-width:none;scrollbar-color:auto;">
+          <div _ngcontent-ufx-c108=""
+            style="margin:0px 5px;padding:8px 12px;box-sizing:border-box;background:rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;color:rgb(255, 255, 255);border-radius:8px;scrollbar-width:none;scrollbar-color:auto;">
+            <svg _ngcontent-ufx-c108="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comments"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""
+              style="margin:0px;padding:0px;box-sizing:content-box;scrollbar-width:none;scrollbar-color:auto;text-align:center;width: 1.25em;display:inline-block;height:12px;overflow:visible;vertical-align:-1.5px;">
+              <path fill="currentColor"
+                d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"
+                style="margin:0px;padding:0px;box-sizing:border-box;scrollbar-width:none;scrollbar-color:auto;">
+              </path>
+            </svg>
+          </div>
+        </a><a _ngcontent-ufx-c108="" target="_blank" href="https://discord.gg/ls-rp"
+          style="margin:0px;padding:0px;box-sizing:border-box;scrollbar-width:none;scrollbar-color:auto;">
+          <div _ngcontent-ufx-c108=""
+            style="margin:0px 5px;padding:8px 12px;box-sizing:border-box;background:rgb(88, 101, 242) none repeat scroll 0% 0% / auto padding-box border-box;color:rgb(255, 255, 255);border-radius:8px;scrollbar-width:none;scrollbar-color:auto;">
+            <svg _ngcontent-ufx-c108="" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""
+              style="margin:0px;padding:0px;box-sizing:content-box;scrollbar-width:none;scrollbar-color:auto;text-align:center;width: 1.25em;display:inline-block;height:12px;overflow:visible;vertical-align:-1.5px;">
+              <path fill="currentColor"
+                d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
+                style="margin:0px;padding:0px;box-sizing:border-box;scrollbar-width:none;scrollbar-color:auto;">
+              </path>
+            </svg>
+          </div>
+        </a><a _ngcontent-ufx-c108="" target="_blank" href="https://twitter.com/lsrp_official"
+          style="margin:0px;padding:0px;box-sizing:border-box;scrollbar-width:none;scrollbar-color:auto;">
+          <div _ngcontent-ufx-c108=""
+            style="margin:0px 5px;padding:8px 12px;box-sizing:border-box;background:rgb(29, 161, 242) none repeat scroll 0% 0% / auto padding-box border-box;color:rgb(255, 255, 255);border-radius:8px;scrollbar-width:none;scrollbar-color:auto;">
+            <svg _ngcontent-ufx-c108="" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""
+              style="margin:0px;padding:0px;box-sizing:content-box;scrollbar-width:none;scrollbar-color:auto;text-align:center;width: 1.25em;display:inline-block;height:12px;overflow:visible;vertical-align:-1.5px;">
+              <path fill="currentColor"
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                style="margin:0px;padding:0px;box-sizing:border-box;scrollbar-width:none;scrollbar-color:auto;">
+              </path>
+            </svg>
+          </div>
+        </a><a _ngcontent-ufx-c108="" target="_blank" href="https://www.youtube.com/LosSantosRoleplay"
+          style="margin:0px;padding:0px;box-sizing:border-box;scrollbar-width:none;scrollbar-color:auto;">
+          <div _ngcontent-ufx-c108=""
+            style="margin:0px 5px;padding:8px 12px;box-sizing:border-box;background:rgb(255, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;color:rgb(255, 255, 255);border-radius:8px;scrollbar-width:none;scrollbar-color:auto;">
+            <svg _ngcontent-ufx-c108="" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""
+              style="margin:0px;padding:0px;box-sizing:content-box;scrollbar-width:none;scrollbar-color:auto;text-align:center;width: 1.25em;display:inline-block;height:12px;overflow:visible;vertical-align:-1.5px;">
+              <path fill="currentColor"
+                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                style="margin:0px;padding:0px;box-sizing:border-box;scrollbar-width:none;scrollbar-color:auto;">
+              </path>
+            </svg>
+          </div>
+        </a>
+
+      </div>
+
+    </app-socials>
 
   </div>
+</div>
+
 
 
   <script type="text/javascript">
@@ -382,6 +482,7 @@
       </tr>
     </tbody>
   </table>
+  </div>
 
 </body>
 
